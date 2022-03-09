@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+   
+    <!-- include file="$(find goal_publisher)/launch/goal_publisher.launch"/!-->
+    <node pkg="kr_183447_prj" type="follow_wall.py" name="wall_follower" />
+    <node pkg="kr_183447_prj" type="go_to_point.py" name="go_to_point" />
+    <node pkg="kr_183447_prj" type="start.py" name="bug2" output="screen" />
+  
+</launch>
